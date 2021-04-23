@@ -1,0 +1,43 @@
+Script error within event 1 (coords 10,5), map 112 (Venom Lab Control Room):
+Exception: SyntaxError
+Message: (eval):4:in `pbExecuteScript'compile error
+(eval):3: syntax error
+:bossboost => (2,1.5,1.5,1.5,1.5,1.5),
+                 ^
+
+***Full script:
+EliteBattle.set(:nextBattleScript, :ELECTRODE)
+EliteBattle.bossBattle(:ELECTRODE,33,1,false,{
+:bossboost => (2,1.5,1.5,1.5,1.5,1.5),
+:ability => (0)})
+
+
+Backtrace:
+
+
+001_Interpreter.rb:246:in `pbExecuteScript'
+001_Interpreter.rb:1458:in `command_355'
+001_Interpreter.rb:359:in `execute_command'
+001_Interpreter.rb:155:in `update'
+001_Interpreter.rb:102:in `loop'
+001_Interpreter.rb:158:in `update'
+002_Scene_Map.rb:162:in `follow_update'
+002_Scene_Map.rb:160:in `loop'
+002_Scene_Map.rb:169:in `follow_update'
+16_Follower_Main.rb:1316:in `update'
+002_Scene_Map.rb:229:in `main'
+002_Scene_Map.rb:226:in `loop'
+002_Scene_Map.rb:231:in `main'
+999_Main.rb:46:in `mainFunctionDebug'
+999_Main.rb:26:in `mainFunction'
+999_Main.rb:56:in `load_scripts_from_folder'
+999_Main.rb:55:in `loop'
+999_Main.rb:64:in `load_scripts_from_folder'
+Section000:28:in `eval'
+Section000:31:in `load_scripts_from_folder'
+Section000:28:in `each'
+Section000:28:in `load_scripts_from_folder'
+Section000:41:in `load_scripts_from_folder'
+Section000:40:in `each'
+Section000:40:in `load_scripts_from_folder'
+Section000:45
