@@ -3316,6 +3316,9 @@ class BattleSceneRoom
 end
 
 module Effectiveness
+
+  module_function
+
   def ineffective_type?(attack_type, defend_type1, defend_type2 = nil, defend_type3 = nil)
     value = calculate(attack_type, defend_type1, defend_type2, defend_type3)
     return ineffective?(value)
@@ -4812,8 +4815,8 @@ class PokeBattle_Battle
     opt = playerBattler?(@battlers[index]) ? ["last", "beforeLast"] : ["lastOpp", "beforeLastOpp"]
     @scene.pbTrainerBattleSpeech(*opt)
     if !@replaced
-      if !@battlers[index].isSpecies?(:ALTEMPER)
-        @battlers[index].form = 0
+      if !@battlers[index].isSpecies?(:ALTEMPER) && !@battlers[index].isSpecies?(:CASTFORM) && !@battlers[index].isSpecies?(:CHERRIM)
+        @battlers[index].form = @battlers[index].form
       else
         if @battlers[index].form <= 20
           @battlers[index].form = 0
@@ -5721,6 +5724,14 @@ GameData::Weather.register({
   :graphics         => [nil, ["fog_tile"]]
 })
 GameData::Weather.register({
+  :id               => :Rainbow,
+  :category         => :Rainbow,
+  :id_number        => 21,
+  :tile_delta_x     => 0,
+  :tile_delta_y     => 0,
+  :graphics         => [nil, ["rainbow_tile"]]
+})
+GameData::Weather.register({
   :id               => :HeatLight,
   :id_number        => 20,   # Must be 2 (preset RMXP weather)
   :category         => :HeatLight,
@@ -5732,7 +5743,7 @@ GameData::Weather.register({
   :id               => :Borealis,
   :id_number        => 28,
   :category         => :Borealis,
-  :graphics         => [["hail_1", "hail_2", "hail_3"]],
+  :graphics         => [["hail_1", "hail_2", "hail_3"],["borealis_tile"]],
   :particle_delta_x => -10,
   :particle_delta_y => 10,
   :tone_proc        => proc { |strength|
@@ -6292,15 +6303,11 @@ class PokemonWeatherScreen
           break
         elsif cmdNone>=0 && cmd==cmdNone
           pbPlayDecisionSE
-          if $game_variables[51]>=1
-            pbMessage(_INTL("Weather: Clear"))
-            pbMessage(_INTL("Weather Ball Type: Normal"))
-            pbMessage(_INTL("Additional Effects: None"))
-#            @sprites["weather"]=IconSprite.new(240,120,@viewport3)
-#            @sprites["weather"].setBitmap("Graphics/Pictures/testfront")
-          else
-            pbMessage(_INTL("No Readout Installed for this Weather"))
-          end
+          pbMessage(_INTL("Weather: Clear"))
+          pbMessage(_INTL("Weather Ball Type: Normal"))
+          pbMessage(_INTL("Additional Effects: None"))
+#         @sprites["weather"]=IconSprite.new(240,120,@viewport3)
+#         @sprites["weather"].setBitmap("Graphics/Pictures/testfront")
         elsif cmdNone>=0 && cmd==cmdRain
           pbPlayDecisionSE
           if $game_variables[52]>=1
