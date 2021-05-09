@@ -544,14 +544,14 @@ class PokeBattle_Battler
           newForm = 0
           case @battle.pbWeather
           when :Fog then                        newForm = 4
-          when :Overcast then newForm = 5
+          when :Overcast then                   newForm = 5
           when :Starstorm then   			        	newForm = 6
           when :DClear then 				          	newForm = 6
           when :Eclipse then                    newForm = 7
           when :Windy then                      newForm = 8
           when :HeatLight then                  newForm = 9
           when :StrongWinds then                newForm = 10
-          when :AcidRain then newForm = 11
+          when :AcidRain then                   newForm = 11
           when :Sandstorm then                  newForm = 12
           when :Rainbow then                    newForm = 13
           when :DustDevil then                  newForm = 14
@@ -561,9 +561,9 @@ class PokeBattle_Battler
           when :Humid then                      newForm = 18
           when :TimeWarp then                   newForm = 19
           when :Reverb then                     newForm = 20
-          when :Sun, :HarshSun then   newForm = 1
-          when :Rain, :Storm, :HeavyRain then newForm = 2
-          when :Hail, :Sleet then     newForm = 3
+          when :Sun, :HarshSun then             newForm = 1
+          when :Rain, :Storm, :HeavyRain then   newForm = 2
+          when :Hail, :Sleet then               newForm = 3
           end
           if @form!=newForm
             @battle.pbShowAbilitySplash(self,true)
@@ -579,14 +579,14 @@ class PokeBattle_Battler
             newForm = 0
             case @battle.pbWeather
             when :Fog then                        newForm = 4
-            when :Overcast then newForm = 5
+            when :Overcast then                   newForm = 5
             when :Starstorm then   			        	newForm = 6
             when :DClear then 				          	newForm = 6
             when :Eclipse then                    newForm = 7
             when :Windy then                      newForm = 8
             when :HeatLight then                  newForm = 9
             when :StrongWinds then                newForm = 10
-            when :AcidRain then newForm = 11
+            when :AcidRain then                   newForm = 11
             when :Sandstorm then                  newForm = 12
             when :Rainbow then                    newForm = 13
             when :DustDevil then                  newForm = 14
@@ -596,9 +596,9 @@ class PokeBattle_Battler
             when :Humid then                      newForm = 18
             when :TimeWarp then                   newForm = 19
             when :Reverb then                     newForm = 20
-            when :Sun, :HarshSun then   newForm = 1
-            when :Rain, :Storm, :HeavyRain then newForm = 2
-            when :Hail, :Sleet then     newForm = 3
+            when :Sun, :HarshSun then             newForm = 1
+            when :Rain, :Storm, :HeavyRain then   newForm = 2
+            when :Hail, :Sleet then               newForm = 3
             end
               if @form >= 21
                 if @form >= 42
@@ -608,44 +608,44 @@ class PokeBattle_Battler
                 end
               end
             case newForm
-            when 4 then                       @effects[PBEffects::Type3] = :FAIRY
-            when 0 then                       @effects[PBEffects::Type3] = :NORMAL
-            when 5 then                       @effects[PBEffects::Type3] = :GHOST
-            when 7 then                       @effects[PBEffects::Type3] = :DARK
-            when 8 then                       @effects[PBEffects::Type3] = :FLYING
-            when 9 then                       @effects[PBEffects::Type3] = :ELECTRIC
-            when 10 then                      @effects[PBEffects::Type3] = :DRAGON
-            when 11 then                      @effects[PBEffects::Type3] = :POISON
-            when 12 then                      @effects[PBEffects::Type3] = :ROCK
-            when 13 then                      @effects[PBEffects::Type3] = :GRASS
-            when 14 then                      @effects[PBEffects::Type3] = :GROUND
-            when 15 then                      @effects[PBEffects::Type3] = :FIGHTING
-            when 16 then                      @effects[PBEffects::Type3] = :STEEL
-            when 17 then                      @effects[PBEffects::Type3] = :PSYCHIC
-            when 18 then                      @effects[PBEffects::Type3] = :BUG
-            when 20 then                      @effects[PBEffects::Type3] = :SOUND
-            when 1 then                       @effects[PBEffects::Type3] = :FIRE
-            when 2 then                       @effects[PBEffects::Type3] = :WATER
-            when 3 then                       @effects[PBEffects::Type3] = :ICE
-            when 25 then                       @effects[PBEffects::Type3] = :FAIRY
-            when 21 then                       @effects[PBEffects::Type3] = :NORMAL
-            when 26 then                       @effects[PBEffects::Type3] = :GHOST
-            when 28 then                       @effects[PBEffects::Type3] = :DARK
-            when 29 then                       @effects[PBEffects::Type3] = :FLYING
-            when 30 then                       @effects[PBEffects::Type3] = :ELECTRIC
-            when 31 then                      @effects[PBEffects::Type3] = :DRAGON
-            when 32 then                      @effects[PBEffects::Type3] = :POISON
-            when 33 then                      @effects[PBEffects::Type3] = :ROCK
-            when 34 then                      @effects[PBEffects::Type3] = :GRASS
-            when 35 then                      @effects[PBEffects::Type3] = :GROUND
-            when 36 then                      @effects[PBEffects::Type3] = :FIGHTING
-            when 37 then                      @effects[PBEffects::Type3] = :STEEL
-            when 38 then                      @effects[PBEffects::Type3] = :PSYCHIC
-            when 39 then                      @effects[PBEffects::Type3] = :BUG
-            when 41 then                      @effects[PBEffects::Type3] = :SOUND
-            when 22 then                       @effects[PBEffects::Type3] = :FIRE
-            when 23 then                       @effects[PBEffects::Type3] = :WATER
-            when 24 then                       @effects[PBEffects::Type3] = :ICE
+            when 4 then                       self.effects[PBEffects::Type3] = :FAIRY
+            when 0 then                       self.effects[PBEffects::Type3] = :NORMAL
+            when 5 then                       self.effects[PBEffects::Type3] = :GHOST
+            when 7 then                       self.effects[PBEffects::Type3] = :DARK
+            when 8 then                       self.effects[PBEffects::Type3] = :FLYING
+            when 9 then                       self.effects[PBEffects::Type3] = :ELECTRIC
+            when 10 then                      self.effects[PBEffects::Type3] = :DRAGON
+            when 11 then                      self.effects[PBEffects::Type3] = :POISON
+            when 12 then                      self.effects[PBEffects::Type3] = :ROCK
+            when 13 then                      self.effects[PBEffects::Type3] = :GRASS
+            when 14 then                      self.effects[PBEffects::Type3] = :GROUND
+            when 15 then                      self.effects[PBEffects::Type3] = :FIGHTING
+            when 16 then                      self.effects[PBEffects::Type3] = :STEEL
+            when 17 then                      self.effects[PBEffects::Type3] = :PSYCHIC
+            when 18 then                      self.effects[PBEffects::Type3] = :BUG
+            when 20 then                      self.effects[PBEffects::Type3] = :SOUND
+            when 1 then                       self.effects[PBEffects::Type3] = :FIRE
+            when 2 then                       self.effects[PBEffects::Type3] = :WATER
+            when 3 then                       self.effects[PBEffects::Type3] = :ICE
+            when 25 then                       self.effects[PBEffects::Type3] = :FAIRY
+            when 21 then                       self.effects[PBEffects::Type3] = :NORMAL
+            when 26 then                       self.effects[PBEffects::Type3] = :GHOST
+            when 28 then                       self.effects[PBEffects::Type3] = :DARK
+            when 29 then                       self.effects[PBEffects::Type3] = :FLYING
+            when 30 then                       self.effects[PBEffects::Type3] = :ELECTRIC
+            when 31 then                      self.effects[PBEffects::Type3] = :DRAGON
+            when 32 then                      self.effects[PBEffects::Type3] = :POISON
+            when 33 then                      self.effects[PBEffects::Type3] = :ROCK
+            when 34 then                      self.effects[PBEffects::Type3] = :GRASS
+            when 35 then                      self.effects[PBEffects::Type3] = :GROUND
+            when 36 then                      self.effects[PBEffects::Type3] = :FIGHTING
+            when 37 then                      self.effects[PBEffects::Type3] = :STEEL
+            when 38 then                      self.effects[PBEffects::Type3] = :PSYCHIC
+            when 39 then                      self.effects[PBEffects::Type3] = :BUG
+            when 41 then                      self.effects[PBEffects::Type3] = :SOUND
+            when 22 then                       self.effects[PBEffects::Type3] = :FIRE
+            when 23 then                       self.effects[PBEffects::Type3] = :WATER
+            when 24 then                       self.effects[PBEffects::Type3] = :ICE
             end
             if @form!=newForm
               @battle.pbShowAbilitySplash(self,true)
@@ -780,11 +780,11 @@ BattleHandlers::EORWeatherAbility.add(:ACCLIMATE,
         end
       when :GROUND
         case type2
-        when :WATER, :ROCK, :ELECTRIC; newWeather = 13
+        when :WATER, :ROCK, :ELECTRIC, type1; newWeather = 13
         when :DRAGON, :FLYING, :SOUND, :GRASS; newWeather = 3
         when :COSMIC; newWeather = 17
         when :TIME; newWeather = 5
-        when :NORMAL,:FIGHTING,:POISON,:BUG,:GHOST,:STEEL,:FIRE,:PSYCHIC,:ICE,:DARK,:FAIRY, type1; newWeather = 8
+        when :NORMAL,:FIGHTING,:POISON,:BUG,:GHOST,:STEEL,:FIRE,:PSYCHIC,:ICE,:DARK,:FAIRY; newWeather = 2
         end
       when :POISON
         case type2
@@ -810,11 +810,11 @@ BattleHandlers::EORWeatherAbility.add(:ACCLIMATE,
       when :STEEL
         case type2
         when :WATER; newWeather = 9
-        when :TIME; newWeather = 20
+        when :TIME, :GROUND; newWeather = 20
         when :FIRE, :ROCK; newWeather = 14
         when :DARK, :NORMAL; newWeather = 15
         when :DRAGON, :SOUND; newWeather = 6
-        when :FLYING,:POISON,:GROUND,:BUG,:GHOST,:STEEL,:GRASS,:ELECTRIC,:PSYCHIC,:ICE,:FAIRY,:COSMIC, type1; newWeather = 1
+        when :FLYING,:POISON,:BUG,:GHOST,:STEEL,:GRASS,:ELECTRIC,:PSYCHIC,:ICE,:FAIRY,:COSMIC, type1; newWeather = 1
         end
       when :GRASS
         case type2
@@ -851,48 +851,50 @@ BattleHandlers::EORWeatherAbility.add(:ACCLIMATE,
         end
       when :ICE
         case type2
-        when :GHOST, :PSYCHIC; newWeather = 7
-        when :TIME, :FAIRY, :ROCK; newWeather = 16
+        when :GHOST, :PSYCHIC, :TIME, :FAIRY, :ROCK, type1; newWeather = 16
         when :SOUND, :FIRE, :FLYING, :POISON; newWeather = 12
         when :GRASS, :BUG, :STEEL, :COSMIC; newWeather = 1
-        when :NORMAL, :FIGHTING, :GROUND, :WATER, :DRAGON, :ELECTRIC, :DARK, type1; newWeather = 15
+        when :NORMAL, :FIGHTING, :GROUND, :WATER, :DRAGON, :ELECTRIC, :DARK; newWeather = 15
         end
       when :PSYCHIC
         case type2
         when :DARK, :GRASS; newWeather = 18
-        when :FIGHTING, :FLYING, :WATER; newWeather = 19
+        when :FLYING, :WATER; newWeather = 20
+        when :FIGHTING; newWeather = 19
+        when :SOUND; newWeather = 5
         when :ICE, :FAIRY; newWeather = 16
-        when :NORMAL,:POISON,:GROUND,:ROCK,:BUG,:GHOST,:STEEL,:FIRE,:ELECTRIC,:PSYCHIC,:DRAGON,:COSMIC,:TIME,:SOUND, type1; newWeather = 7
+        when :NORMAL,:POISON,:GROUND,:ROCK,:BUG,:GHOST,:STEEL,:FIRE,:ELECTRIC,:DRAGON,:COSMIC,:TIME, type1; newWeather = 7
         end
       when :DRAGON
         case type2
         when :SOUND, :GROUND, :FLYING, :GRASS; newWeather = 3
-        when :DARK, :FIGHTING, :TIME; newWeather = 4
+        when :DARK, :FIGHTING, :TIME, type1; newWeather = 4
         when :FIRE; newWeather = 12
         when :PSYCHIC; newWeather = 7
-        when :NORMAL,:POISON,:ROCK,:BUG,:GHOST,:STEEL,:WATER,:ELECTRIC,:ICE,:DRAGON,:FAIRY,:COSMIC, type1; newWeather = 6
+        when :NORMAL,:POISON,:ROCK,:BUG,:GHOST,:STEEL,:WATER,:ELECTRIC,:ICE,:DRAGON,:FAIRY,:COSMIC; newWeather = 6
         end
       when :DARK
         case type2
         when :NORMAL,:FIGHTING,:FLYING,:GROUND,:BUG,:GHOST,:WATER,:ELECTRIC,:DRAGON,:FAIRY,:TIME,:SOUND,type1; newWeather = 4
-        when :POISON,:FIRE,:COSMIC; newWeather = 14
-        when :GRASS,:PSYCHIC; newWeather = 18
+        when :POISON,:FIRE; newWeather = 14
+        when :GRASS,:PSYCHIC,:COSMIC; newWeather = 18
         when :ROCK,:STEEL,:ICE; newWeather = 15
         end
       when :FAIRY
         case type2
         when :FIRE; newWeather = 12
+        when :COSMIC; newWeather = 1
         when :GRASS, :SOUND, :TIME; newWeather = 11
         when :ROCK, :ICE; newWeather = 16
-        when :NORMAL,:FIGHTING,:FLYING,:POISON,:GROUND,:BUG,:STEEL,:WATER,:GRASS,:ELECTRIC,:DRAGON,:DARK,:COSMIC, type1; newWeather = 6
+        when :NORMAL,:FIGHTING,:FLYING,:POISON,:GROUND,:BUG,:STEEL,:WATER,:GRASS,:ELECTRIC,:DRAGON,:DARK, type1; newWeather = 6
         end
       when :COSMIC
         case type2
         when :GROUND, :SOUND; newWeather = 3
         when :GHOST, :TIME; newWeather = 7
         when :POISON, :FIGHTING; newWeather = 17
-        when :ICE, :GRASS, :BUG, :STEEL; newWeather = 1
-        when :NORMAL,:FLYING,:ROCK,:FIRE,:WATER,:ELECTRIC,:PSYCHIC,:DRAGON,:FAIRY,:COSMIC, type1; newWeather = 19
+        when :ICE, :GRASS, :BUG, :STEEL, :FAIRY; newWeather = 1
+        when :NORMAL,:FLYING,:ROCK,:FIRE,:WATER,:ELECTRIC,:PSYCHIC,:DRAGON, type1; newWeather = 19
         end
       when :TIME
         case type2
@@ -902,12 +904,13 @@ BattleHandlers::EORWeatherAbility.add(:ACCLIMATE,
         end
       when :SOUND
         case type2
-        when :GROUND, :FLYING, :GRASS, :DRAGON; newWeather = 3
+        when :GROUND, :FLYING, :GRASS, :DRAGON, :COSMIC; newWeather = 3
         when :POISON, :ROCK, :STEEL; newWeather = 14
         when :GHOST; newWeather = 7
+        when :TIME; newWeather = 5
         when :WATER; newWeather = 6
         when :FIGHTING; newWeather = 11
-        when :NORMAL,:BUG,:GHOST,:FIRE,:ELECTRIC,:PSYCHIC,:ICE,:DRAGON,:DARK,:FAIRY,:COSMIC,:TIME, type1; newWeather = 12
+        when :NORMAL,:BUG,:GHOST,:FIRE,:ELECTRIC,:PSYCHIC,:ICE,:DRAGON,:DARK,:FAIRY, type1; newWeather = 12
         end
       end
     end
@@ -971,6 +974,27 @@ BattleHandlers::EORWeatherAbility.add(:ACCLIMATE,
   end
 end
     newForm = newWeather
+    case newForm
+    when 4 then                       battler.effects[PBEffects::Type3] = :FAIRY
+    when 0 then                       battler.effects[PBEffects::Type3] = :NORMAL
+    when 5 then                       battler.effects[PBEffects::Type3] = :GHOST
+    when 7 then                       battler.effects[PBEffects::Type3] = :DARK
+    when 8 then                       battler.effects[PBEffects::Type3] = :FLYING
+    when 9 then                       battler.effects[PBEffects::Type3] = :ELECTRIC
+    when 10 then                      battler.effects[PBEffects::Type3] = :DRAGON
+    when 11 then                      battler.effects[PBEffects::Type3] = :POISON
+    when 12 then                      battler.effects[PBEffects::Type3] = :ROCK
+    when 13 then                      battler.effects[PBEffects::Type3] = :GRASS
+    when 14 then                      battler.effects[PBEffects::Type3] = :GROUND
+    when 15 then                      battler.effects[PBEffects::Type3] = :FIGHTING
+    when 16 then                      battler.effects[PBEffects::Type3] = :STEEL
+    when 17 then                      battler.effects[PBEffects::Type3] = :PSYCHIC
+    when 18 then                      battler.effects[PBEffects::Type3] = :BUG
+    when 20 then                      battler.effects[PBEffects::Type3] = :SOUND
+    when 1 then                       battler.effects[PBEffects::Type3] = :FIRE
+    when 2 then                       battler.effects[PBEffects::Type3] = :WATER
+    when 3 then                       battler.effects[PBEffects::Type3] = :ICE
+    end
     if battler.form >= 21 && battler.isSpecies?(:ALTEMPER)
       if battler.form >= 42 && battler.isSpecies?(:ALTEMPER)
         newForm += 42
@@ -2267,7 +2291,7 @@ class PokemonSave_Scene
     else
       loctext+=_INTL("Time<r><c2={1}>{2}m</c2><br>",textColor,min)
     end
-    loctext+=_INTL("Badges<r><c2={1}>{2}</c2><br>",textColor,$Trainer.badge_count)
+    loctext+=_INTL("Chapter<r><c2={1}>{2}</c2><br>",textColor,$Trainer.badge_count)
     if $Trainer.has_pokedex
       loctext+=_INTL("Pokédex<r><c2={1}>{2}/{3}</c2><br>",textColor,$Trainer.pokedex.owned_count,$Trainer.pokedex.seen_count)
     end
