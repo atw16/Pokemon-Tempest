@@ -1103,10 +1103,10 @@ BattlerShadowSize = 3
 [GIRATINA,1]
 FormName = Origin Forme
 Type1 = GHOST
-Type2 = SOUND
-BaseStats = 150,150,115,100,150,115
-Abilities = DUAT
-HiddenAbility = DUAT
+Type2 = DRAGON
+BaseStats = 150,120,100,90,120,100
+Abilities = LEVITATE
+HiddenAbility = LEVITATE
 TutorMoves = AERIALACE,AQUATAIL,BRUTALSWING,BULLDOZE,CALMMIND,CHARGEBEAM,CONFIDE,CUT,DARKPULSE,DEFOG,DOUBLETEAM,DRACOMETEOR,DRAGONCLAW,DRAGONPULSE,DRAGONTAIL,DREAMEATER,EARTHPOWER,EARTHQUAKE,ECHOEDVOICE,ENERGYBALL,FACADE,FLY,FRUSTRATION,GIGAIMPACT,GRAVITY,HIDDENPOWER,HYPERBEAM,HYPERVOICE,ICYWIND,IRONHEAD,IRONTAIL,MAGICCOAT,OUTRAGE,PAYBACK,PROTECT,PSYCHIC,PSYCHUP,RAINDANCE,REST,RETURN,ROAR,ROCKSMASH,ROUND,SAFEGUARD,SHADOWBALL,SHADOWCLAW,SHOCKWAVE,SLEEPTALK,SNORE,SPITE,STEELWING,STONEEDGE,STRENGTH,SUBSTITUTE,SUNNYDAY,SWAGGER,TAILWIND,TELEKINESIS,THUNDER,THUNDERBOLT,THUNDERWAVE,TOXIC,WILLOWISP
 Height = 6.9
 Weight = 650.0
@@ -1116,8 +1116,10 @@ BattlerEnemyY = -8
 #-------------------------------
 [GIRATINA,2]
 FormName = Primal Giratina
-BaseStats = 150,120,100,90,120,100
-Abilities = SHADOWGUARD
+Type1 = GHOST
+Type2 = SOUND
+BaseStats = 150,150,115,100,150,115
+Abilities = PINDROP
 HiddenAbility = SHADOWGUARD
 TutorMoves = AERIALACE,AQUATAIL,BRUTALSWING,BULLDOZE,CALMMIND,CHARGEBEAM,CONFIDE,CUT,DARKPULSE,DEFOG,DOUBLETEAM,DRACOMETEOR,DRAGONCLAW,DRAGONPULSE,DRAGONTAIL,DREAMEATER,EARTHPOWER,EARTHQUAKE,ECHOEDVOICE,ENERGYBALL,FACADE,FLY,FRUSTRATION,GIGAIMPACT,GRAVITY,HIDDENPOWER,HYPERBEAM,HYPERVOICE,ICYWIND,IRONHEAD,IRONTAIL,MAGICCOAT,OUTRAGE,PAYBACK,PROTECT,PSYCHIC,PSYCHUP,RAINDANCE,REST,RETURN,ROAR,ROCKSMASH,ROUND,SAFEGUARD,SHADOWBALL,SHADOWCLAW,SHOCKWAVE,SLEEPTALK,SNORE,SPITE,STEELWING,STONEEDGE,STRENGTH,SUBSTITUTE,SUNNYDAY,SWAGGER,TAILWIND,TELEKINESIS,THUNDER,THUNDERBOLT,THUNDERWAVE,TOXIC,WILLOWISP
 Height = 6.9
@@ -1973,6 +1975,7 @@ Type1 = SOUND
 Type2 = FLYING
 BaseStats = 76,45,85,101,122,82
 Abilities = SUBWOOFER
+HiddenAbility = SUBWOOFER
 #-------------------------------
 [XATU,1]
 FormName = Mega Xatu
@@ -2292,7 +2295,7 @@ BaseStats = 80,30,90,120,140,90
 #-------------------------------
 [ALTEMPER,42]
 FormName = Primal Altemper
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 Type1 = TIME
 Type2 = COSMIC
 #-------------------------------
@@ -2301,7 +2304,7 @@ FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = FIRE
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 Color = Red
 Pokedex = This is the form ALTEMPER takes on the brightest of days. Its skin is unexpectedly hot to the touch, so approach with care.
 #-------------------------------
@@ -2310,7 +2313,7 @@ FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = WATER
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 Color = Blue
 Pokedex = This is the form ALTEMPER takes when soaked with rain. When its body is compressed, water will seep out as if from a sponge.
 #-------------------------------
@@ -2319,7 +2322,7 @@ FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = ICE
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 Color = White
 Pokedex = This is the form ALTEMPER takes when covered in snow. Its body becomes an ice-like material, with a temperature near -5 degrees Celsius.
 #-------------------------------
@@ -2328,122 +2331,251 @@ FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = FAIRY
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,47]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = GHOST
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,48]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,49]
 FormName = Mega Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = DARK
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,50]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = FLYING
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,51]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = ELECTRIC
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,52]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = DRAGON
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,53]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = POISON
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,54]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = ROCK
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,55]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = GRASS
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,56]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = GROUND
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,57]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = FIGHTING
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,58]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = STEEL
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,59]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = PSYCHIC
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,60]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = BUG
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,61]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
 #-------------------------------
 [ALTEMPER,62]
 FormName = Primal Altemper
 Type1 = TIME
 Type2 = COSMIC
 Type3 = SOUND
-BaseStats = 80,30,115,140,170,115
+BaseStats = 80,30,145,70,130,145
+#-------------------------------
+[FORMETEOS,1]
+FormName = Sunny Form
+Type1 = FIRE
+Type2 = COSMIC
+Color = Red
+Pokedex = This is the form FORMETEOS takes on the brightest of days. Its skin is unexpectedly hot to the touch, so approach with care.
+BattlerPlayerY = 0
+BattlerEnemyY = 21
+#-------------------------------
+[FORMETEOS,2]
+FormName = Rainy Form
+Type1 = WATER
+Type2 = COSMIC
+Color = Blue
+Pokedex = This is the form FORMETEOS takes when soaked with rain. When its body is compressed, water will seep out as if from a sponge.
+BattlerPlayerY = 0
+BattlerEnemyY = 21
+#-------------------------------
+[FORMETEOS,3]
+FormName = Snowy Form
+Type1 = ICE
+Type2 = COSMIC
+Color = White
+Pokedex = This is the form FORMETEOS takes when covered in snow. Its body becomes an ice-like material, with a temperature near -5 degrees Celsius.
+BattlerPlayerY = 0
+BattlerEnemyY = 20
+#-------------------------------
+[FORMETEOS,4]
+FormName = Foggy Form
+Type1 = FAIRY
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,5]
+FormName = Overcast Form
+Type1 = GHOST
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,6]
+FormName = Starry Form
+Type1 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,7]
+FormName = Eclipse Form
+Type1 = DARK
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,8]
+FormName = Windy Form
+Type1 = FLYING
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,9]
+FormName = Heat Lightning Form
+Type1 = ELECTRIC
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,10]
+FormName = Delta Stream Form
+Type1 = DRAGON
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,11]
+FormName = Acid Rain Form
+Type1 = POISON
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,12]
+FormName = Sandstorm Form
+Type1 = ROCK
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,13]
+FormName = Rainbow Form
+Type1 = GRASS
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,14]
+FormName = Dust Devil Form
+Type1 = GROUND
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,15]
+FormName = Distortion Ashfall Form
+Type1 = FIGHTING
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,16]
+FormName = Volcanic Ash Form
+Type1 = STEEL
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,17]
+FormName = Borealis Form
+Type1 = PSYCHIC
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,18]
+FormName = Humid Form
+Type1 = BUG
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,19]
+FormName = Time Warp Form
+Type1 = TIME
+Type2 = COSMIC
+BattlerEnemyY = 28
+#-------------------------------
+[FORMETEOS,20]
+FormName = Echo Chamber Form
+Type1 = SOUND
+Type2 = COSMIC
+BattlerEnemyY = 28
 #-------------------------------
 [BAGON,2]
 FormName = Ufaran Form
 Type1 = GROUND
 Type2 = DRAGON
+Rareness = 124
 Abilities = DESERTSTORM
 HiddenAbility = MULTISCALE
 Moves = 1,RAGE,4,MUDSLAP,7,LEER,10,BITE,13,DRAGONBREATH,17,HEADBUTT,21,FOCUSENERGY,25,BULLDOZE,29,DRAGONCLAW,34,SCORCHINGSANDS,39,SCARYFACE,44,EARTHPOWER,49,SHOREUP
@@ -2563,7 +2695,7 @@ GenderRate = Female50Percent
 GrowthRate = Parabolic
 BaseEXP = 86
 EffortPoints = 0,0,0,1,0,0
-Rareness = 60
+Rareness = 124
 Happiness = 35
 Abilities = INNERFOCUS,NITRIC
 HiddenAbility = TOUGHCLAWS
@@ -2680,7 +2812,7 @@ GenderRate = Female50Percent
 GrowthRate = Slow
 BaseEXP = 60
 EffortPoints = 0,1,0,0,0,0
-Rareness = 45
+Rareness = 124
 Happiness = 70
 Abilities = SNOWCLOAK
 HiddenAbility = HAILSTORM
@@ -4035,4 +4167,100 @@ Type2 = TIME
 MegaStone = BAROMASTITE
 BaseStats = 120,120,155,120,120,155
 Abilities = BAROMETRIC
+#-------------------------------
+[CORVIKNIGHT,1]
+FormName = Mega Corviknight
+MegaStone = CORVITE
+Type1 = FLYING
+Type2 = STEEL
+BaseStats = 98,117,135,77,53,115
+Abilities = ASHCOVER
+HiddenAbility = ASHCOVER
+#-------------------------------
+[LUVDISC,1]
+FormName = Zharonian
+Type1 = WATER
+Type2 = COSMIC
+Abilities = SWIFTSWIM,DRIZZLE
+HiddenAbility = HUGEPOWER
+Moves = 1,TACKLE,1,CHARM,4,AQUAJET,7,AGILITY,9,ASTROPUNCH,13,LUCKYCHANT,17,UTURN,20,STARSAP,22,HEARTSTAMP,26,KNOCKOFF,31,COSMICFANGS,34,STARSTORM,37,LIQUIDATION,40,AQUARING,42,SOAK,46,HYDROPUMP,49,HEALINGWISH
+TutorMoves = TOXIC,PROTECT,ATTRACT,BLIZZARD,BOUNCE,CONFIDE,DIVE,DOUBLETEAM,FACADE,FRUSTRATION,HAIL,HIDDENPOWER,ICEBEAM,ICYWIND,LIQUIDATION,PROTECT,PSYCHUP,RAINDANCE,REST,RETURN,ROUND,SAFEGUARD,SCALD,SLEEPTALK,SNORE,SUBSTITUTE,SURF,SWAGGER,TOXIC,WATERFALL,WATERPULSE,STARBEAM,UTURN,FLIPTURN
+EggMoves = AQUARING,BRINE,CAPTIVATE,ENTRAINMENT,HEALPULSE,MUDSPORT,SPLASH,SUPERSONIC,WATERSPORT
+BattlerPlayerY = 21
+BattlerEnemyY = 23
+Evolutions = DISCORONA,Level,38
+#-------------------------------
+[LUCARIO,2]
+FormName = Zharonian
+Type1 = FIGHTING
+Type2 = GROUND
+BaseStats = 70,115,80,90,90,80
+GenderRate = FemaleOneEighth
+GrowthRate = Parabolic
+BaseEXP = 184
+EffortPoints = 0,2,0,0,0,0
+Rareness = 45
+Happiness = 70
+Abilities = SANDSPIT,INNERFOCUS
+HiddenAbility = DEFIANT
+Moves = 0,BONECLUB,1,LASERFOCUS,1,FORESIGHT,1,QUICKATTACK,1,DETECT,1,METALCLAW,6,COUNTER,11,FEINT,15,POWERUPPUNCH,19,SWORDSDANCE,24,BONERUSH,29,VACUUMWAVE,33,QUICKGUARD,37,DRAINPUNCH,42,STEALTHROCK,47,BULKUP,51,THOUSANDARROWS,55,SHOREUP,60,CLOSECOMBAT,65,POWERWHIP,70,EXTREMESPEED
+TutorMoves = REST,SLEEPTALK,TOXIC,PROTECT,EARTHPOWER,EARTHQUAKE,SWORDSDANCE,STEALTHROCK,POWERUPPUNCH,DRAINPUNCH,ICEPUNCH,FIREPUNCH,THUNDERPUNCH,DOPPLERPUNCH,VACUUMWAVE,BULKUP,NASTYPLOT,CALMMIND,AGILITY,CLOSECOMBAT
+Compatibility = Field,Humanlike
+StepsToHatch = 6400
+Height = 1.2
+Weight = 54.0
+Color = Blue
+Shape = 6
+Kind = Aura
+Pokedex = It has the ability to sense the auras of all things. It understands human speech.
+BattlerPlayerX = 8
+BattlerPlayerY = 0
+BattlerEnemyX = 1
+BattlerEnemyY = 10
+BattlerShadowX = 0
+BattlerShadowSize = 2
+Evolutions =
+#-------------------------------
+[LUCARIO,3]
+FormName = Zharonian Mega Form
+MegaStone = ZLUCARIONITE
+Type1 = FIGHTING
+Type2 = GROUND
+BaseStats = 70,155,105,105,90,100
+Abilities = DESERTSTORM
+#-------------------------------
+[QWILFISH,1]
+FormName = Zharonian
+Type1 = WATER
+Type2 = STEEL
+BaseStats = 85,45,95,95,125,95
+GenderRate = Female50Percent
+GrowthRate = Medium
+BaseEXP = 88
+EffortPoints = 0,0,0,0,1,0
+Rareness = 45
+Happiness = 70
+Abilities = SWIFTSWIM,IRONBARBS
+HiddenAbility = INTIMIDATE
+Moves = 1,FELLSTINGER,1,HYDROPUMP,1,DESTINYBOND,1,WATERGUN,1,SPIKES,1,TACKLE,1,MIRRORRUSH,9,HARDEN,9,MINIMIZE,13,BUBBLE,17,ROLLOUT,21,TOXICSPIKES,24,WATERPULSE,27,MIRRORSHOT,30,SCORCHINGSANDS,33,SCALD,37,FLASHCANNON,41,TAUNT,45,SURF,49,FLIPTURN,53,DESTINYBOND,57,HYDROPUMP,60,POLARITYPULSE,70,EXPLOSION
+TutorMoves = IRONHEAD,FLASHCANNON,FLIPTURN,AQUATAIL,ATTRACT,BLIZZARD,BOUNCE,CONFIDE,DIVE,DOUBLETEAM,EXPLOSION,FACADE,FRUSTRATION,GYROBALL,HAIL,HIDDENPOWER,ICEBEAM,ICYWIND,LIQUIDATION,PAINSPLIT,PAYBACK,POISONJAB,PROTECT,RAINDANCE,REST,RETURN,ROUND,SCALD,SHADOWBALL,SHOCKWAVE,SIGNALBEAM,SLEEPTALK,SLUDGEBOMB,SLUDGEWAVE,SNORE,SUBSTITUTE,SURF,SWAGGER,TAUNT,THROATCHOP,THUNDERWAVE,TOXIC,VENOSHOCK,WATERFALL,WATERPULSE
+EggMoves = ACIDSPRAY,AQUAJET,ASTONISH,BRINE,BUBBLEBEAM,FLAIL,HAZE,SIGNALBEAM,SUPERSONIC,WATERPULSE,MIRRORRUSH,DAZZLINGGLEAM,STARBEAM,LETHALDASH
+Compatibility = Water2
+StepsToHatch = 5120
+Height = 0.5
+Weight = 3.9
+Color = Gray
+Shape = 3
+Habitat = Sea
+RegionalNumbers = 0,163
+Kind = Balloon
+Pokedex = A Qwilfish uses the pressure of water it swallows to shoot toxic quills all at once from all over its body. It finds swimming to be somewhat challenging.
+WildItemUncommon = POISONBARB
+BattlerPlayerX = -5
+BattlerPlayerY = 0
+BattlerEnemyX = 4
+BattlerEnemyY = 9
+BattlerShadowX = 0
+BattlerShadowSize = 2
+Evolutions =
 #-------------------------------

@@ -4,11 +4,13 @@ module Mission
   Three = 520
   Four = 526
   Five = 541
+  Six = 557
   Mission1 = 503
   Mission2 = 504
   Mission3 = 505
   Mission4 = 507
   Mission5 = 508
+  Mission6 = 511
   Stella = 517
   Vinny = 518
   SideQuest = 404
@@ -54,11 +56,28 @@ def pbMissionUpdate
       end
     end
   elsif $game_switches[Mission::Five] == true
-    if $game_variables[Mission::Mission5] == 10
+    if $game_variables[Mission::Mission5] == 9
       $game_variables[Mission::Mission5] += 0
     else
-      $game_variables[Mission::Mission5] += 1
-      $PokemonGlobal.quests.advanceQuestToStage(10,$game_variables[Mission::Mission5])
+      if $game_switches[Mission::Stella] == true
+        $game_variables[Mission::Mission5] += 1
+        $PokemonGlobal.quests.advanceQuestToStage(11,$game_variables[Mission::Mission4])
+      elsif $game_switches[Mission::Vinny] == true
+        $game_variables[Mission::Mission5] += 1
+        $PokemonGlobal.quests.advanceQuestToStage(10,$game_variables[Mission::Mission4])
+      end
+    end
+  elsif $game_switches[Mission::Six] == true
+    if $game_variables[Mission::Mission6] == 10
+      $game_variables[Mission::Mission6] += 0
+    else
+      if $game_switches[Mission::Stella] == true
+        $game_variables[Mission::Mission6] += 1
+        $PokemonGlobal.quests.advanceQuestToStage(13,$game_variables[Mission::Mission4])
+      elsif $game_switches[Mission::Vinny] == true
+        $game_variables[Mission::Mission6] += 1
+        $PokemonGlobal.quests.advanceQuestToStage(12,$game_variables[Mission::Mission4])
+      end
     end
     #elsif
     #written in to help me expand
@@ -121,6 +140,22 @@ def pbNewMission(num)
     elsif $game_switches[Mission::Stella]
       $PokemonGlobal.quests.completeQuest(7)
     end
+  when 5
+    $game_variables[Mission::Mission6] = 1
+    $Trainer.badges[4] = true
+    $game_switches[Mission::Six] = true
+    $game_variables[Chapter::Count] += 1
+    if $game_switches[Mission::Vinny]
+      $PokemonGlobal.quests.activateQuest(12)
+    elsif $game_switches[Mission::Stella]
+      $PokemonGlobal.quests.activateQuest(13)
+    end
+    if $game_switches[Mission::Vinny]
+      $PokemonGlobal.quests.completeQuest(10)
+    elsif $game_switches[Mission::Stella]
+      $PokemonGlobal.quests.completeQuest(11)
+    end
+    $PokemonGlobal.encounter_version = 1
   when 0
     $game_switches[Readouts::Readout] = true
     $PokemonGlobal.quests.activateQuest(2)

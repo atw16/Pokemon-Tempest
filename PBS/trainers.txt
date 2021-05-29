@@ -1,5 +1,105 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+# Quad Region Elder Battles
+#-------------------------------
+[ELITEFOUR_Marie,Marie]
+LoseText = "Wow! You've grown so much!"
+Pokemon = DRAGAPULT,96
+  Item = EXPERTBELT
+  Form = 1
+  Ability = 1
+  Moves = UTURN,BOOMBURST,SPECTRALSHRIEK,FLAMETHROWER
+Pokemon = CHIMECHO,95
+  Item = LEFTOVERS
+  Moves = COMETSHARDS,WISH,STARBEAM,BOOMBURST
+Pokemon = NOIVERN,94
+  Item = HEAVYDUTYBOOTS
+  Moves = BOOMBURST,MACHPULSE,FLAMETHROWER,DEFOG
+Pokemon = EXPLOUD,94
+  Item = LIFEORB
+  Ability = 0
+  Moves = BOOMBURST,MACHPULSE,ICEBEAM,FOCUSBLAST
+Pokemon = ELECTRODE,96
+  Item = AIRBALLOON
+  Ability = 2
+  Moves = OVERCHARGE,POLARITYPULSE,BOOMBURST,VOLTSWITCH
+Pokemon = CHATOT,98
+  Ability = 2
+  Item = CHATOTITE
+  Moves = BOOMBURST,CHATTER,POLARITYPULSE,ROOST
+#-------------------------------
+[ELITEFOUR_Cynthia,Cynthia]
+LoseText = "It's amazing just how strong you are!"
+Pokemon = HIPPOWDON,96
+  Form = 2
+  Item = LEFTOVERS
+  Moves = LIQUIDATION,STEALTHROCK,SLACKOFF,WHIRLWIND
+Pokemon = DUSKNOIR,95
+  Item = ASSAULTVEST
+  Moves = DRAINPUNCH,SHADOWPUNCH,EARTHQUAKE,TEMPORALRAZE
+Pokemon = MAGMORTAR,94
+  Item = WISEGLASSES
+  Moves = FLAMETHROWER,PSYCHIC,SLUDGEBOMB,FLAMECHARGE
+Pokemon = ELECTIVIRE,94
+  Item = MUSCLEBAND
+  Moves = THUNDERPUNCH,CLOSECOMBAT,EARTHQUAKE,ICEPUNCH
+Pokemon = GARCHOMP,96
+  Form = 2
+  Item = LIFEORB
+  Moves = ICICLECRASH,EARTHQUAKE,SWORDSDANCE,ROCKSLIDE
+Pokemon = LUCARIO,98
+  Item = LUCARIONITE
+  Moves = CLOSECOMBAT,ICEPUNCH,METEORMASH,IRONHEAD
+#-------------------------------
+[ELITEFOUR_Simon,Simon]
+LoseText = "Very well done!"
+Pokemon = BASTIODON,96
+  Item = LEFTOVERS
+  Moves = STEALTHROCK,HEAVYSLAM,ROAR,QUANTUMCRUSH
+Pokemon = RAMPARDOS,95
+  Item = LIFEORB
+  Moves = EARTHQUAKE,HEADSMASH,QUANTUMCRUSH,ROCKSLIDE
+Pokemon = CRADILY,94
+  Item = LEFTOVERS
+  Moves = GIGADRAIN,TOXIC,QUANTUMWAVE,RECOVER
+Pokemon = HYPNO,94
+  Item = WEATHERROCK
+  Ability = 2
+  Moves = QUANTUMWAVE,PSYSHOCK,NASTYPLOT,WISH
+Pokemon = AERODACTYL,96
+  Item = EXPERTBELT
+  Moves = ROCKSLIDE,QUANTUMCRUSH,EARTHQUAKE,ROOST
+Pokemon = ABSOL,98
+  Item = ABSOLITE
+  Moves = KNOCKOFF,QUANTUMCRUSH,PSYCHOCUT,SWORDSDANCE
+#-------------------------------
+[ELITEFOUR_Barry,Barry]
+LoseText = "You've got some promise!"
+Pokemon = STARAPTOR,96
+  Item = CHOICEBAND
+  Moves = BRAVEBIRD,CLOSECOMBAT,ROAR,QUANTUMCRUSH
+Pokemon = HERACROSS,95
+  Item = FLAMEORB
+  Ability = 1
+  Moves = EARTHQUAKE,CLOSECOMBAT,MEGAHORN,KNOCKOFF
+Pokemon = LUXRAY,94
+  Item = LIFEORB
+  Ability = 2
+  Moves = CRUNCH,THUNDERFANG,LEECHLIFE,ICEFANG
+Pokemon = VICTREEBEL,94
+  Item = LEFTOVERS
+  Form = 1
+  Ability = 2
+  Moves = SPIKECANNON,SEEDBOMB,LEECHSEED,STEALTHROCK
+Pokemon = CLEFABLE,96
+  Ability = 1
+  Item = LEFTOVERS
+  Moves = MOONBLAST,STARBEAM,WISH,AROMATHERAPY
+Pokemon = INFERNAPE,98
+  Item = INFERNITE
+  Moves = AURASPHERE,MAGMATREK,SLACKOFF,HYPERVOICE
+#-------------------------------
+#-------------------------------
 # Rival Battles
 #-------------------------------
 [RIVAL3,Akron]
@@ -34,6 +134,46 @@ Pokemon = CLEFAIRY,38
 Pokemon = SALAMENCE,40
   Form = 2
   Ability = 0
+#-------------------------------
+[RIVAL3,Akron,3]
+LoseText = "That'll have to do."
+Pokemon = HYPNO,84
+  Ability = 2
+Pokemon = FROSLASS,83
+  Ability = 2
+Pokemon = GYARADOS,83
+Pokemon = CLEFABLE,84
+Pokemon = SALAMENCE,86
+  Item = USALAMENCITE
+  Form = 2
+  Ability = 0
+#-------------------------------
+[RIVAL3,Akron,4]
+LoseText = "That'll have to do."
+Pokemon = HYPNO,86
+  Ability = 2
+Pokemon = FROSLASS,85
+  Ability = 2
+Pokemon = GYARADOS,85
+Pokemon = CLEFABLE,86
+Pokemon = SALAMENCE,88
+  Item = USALAMENCITE
+  Form = 2
+  Ability = 0
+#-------------------------------
+[RIVAL3,Akron,5]
+LoseText = "Congrats."
+Pokemon = HYPNO,97
+  Ability = 2
+Pokemon = FROSLASS,96
+  Ability = 2
+Pokemon = GYARADOS,96
+Pokemon = CLEFABLE,97
+Pokemon = SALAMENCE,99
+  Item = USALAMENCITE
+  Form = 2
+  Ability = 0
+Pokemon = FORMETEOS,100
 #-------------------------------
 # Zephyr Hills
 #-------------------------------
@@ -121,7 +261,7 @@ Pokemon = TURTWIG,18
 LoseText = "You're really good!"
 Pokemon = TROPIUS,19
 #-------------------------------
-# Rainbow Cliffs
+# Trail of Affliction
 #-------------------------------
 [BUGCATCHER,Antonio]
 LoseText = "Buzz!"
@@ -149,6 +289,32 @@ LoseText = "Sick!"
 Pokemon = PINSIR,22
   Form = 2
 #-------------------------------
+[BUGCATCHER,Antonio,1]
+LoseText = "Buzz!"
+Pokemon = YANMEGA,79
+Pokemon = YANMEGA,79
+#-------------------------------
+[BUGCATCHER,Anthony,1]
+LoseText = "Oh wow!"
+Pokemon = HERACROSS,79
+Pokemon = YANMEGA,79
+#-------------------------------
+[BUGCATCHER,Antoine,1]
+LoseText = "Isn't it awesome?"
+Pokemon = SCIZOR,80
+#-------------------------------
+[YOUNGSTER,Deacon,1]
+LoseText = "Oh you're strong!"
+Pokemon = NIDOKING,79
+  Form = 1
+Pokemon = NIDOQUEEN,79
+  Form = 1
+#-------------------------------
+[BLACKBELT,Freddie,1]
+LoseText = "Sick!"
+Pokemon = PINSIR,80
+  Form = 2
+#-------------------------------
 # Haunted Forest
 #-------------------------------
 [BUGCATCHER,Allan]
@@ -161,6 +327,25 @@ Pokemon = YANMA,22
 Pokemon = SPINARAK,20
   Form = 1
 Pokemon = HERACROSS,24
+#-------------------------------
+[CHANNELER,Athena,1]
+LoseText = "Woohoo!"
+Pokemon = BANETTE,78
+Pokemon = DUSKNOIR,78
+Pokemon = GENGAR,78
+  Form = 3
+#-------------------------------
+[BUGCATCHER,Allan,1]
+LoseText = "Woohoo!"
+Pokemon = SCIZOR,80
+  Item = SCIZORITE
+#-------------------------------
+[BUGCATCHER,Steve,1]
+LoseText = "It's freaky, man!"
+Pokemon = YANMEGA,78
+Pokemon = ARIADOS,78
+  Form = 1
+Pokemon = HERACROSS,78
 #-------------------------------
 [CHANNELER,Athena]
 LoseText = "Woohoo!"
@@ -196,6 +381,36 @@ Pokemon = HIPPOPOTAS,21
 Pokemon = CHINCHOU,21
 Pokemon = BARBOACH,21
 #-------------------------------
+[BLACKBELT,Michael]
+LoseText = "Ugh..."
+Pokemon = MEDITITE,22
+#-------------------------------
+[TUBER_F,Lola,1]
+LoseText = "Oh no! My cute Pokémon!"
+Pokemon = SIMISAGE,78
+  Form = 1
+Pokemon = SIMISEAR,78
+  Form = 1
+Pokemon = SIMIPOUR,78
+  Form = 1
+#-------------------------------
+[FISHERMAN,Barnie,1]
+LoseText = "Ah lost it!"
+Pokemon = SKRELP,79
+Pokemon = GYARADOS,80
+#-------------------------------
+[FISHERMAN,Sheldon,1]
+LoseText = "Ah lost it!"
+Pokemon = HIPPOPOTAS,78
+  Form = 2
+Pokemon = CHINCHOU,78
+Pokemon = BARBOACH,78
+#-------------------------------
+[BLACKBELT,Michael,1]
+LoseText = "Ugh..."
+Pokemon = MEDICHAM,80
+  Item = MEDICHAMITE
+#-------------------------------
 # Pixie Caverns
 #-------------------------------
 [PICNICKER,Faith]
@@ -217,6 +432,27 @@ Pokemon = CLEFAIRY,24
 [BLACKBELT,Tyler]
 LoseText = "Bruh!"
 Pokemon = MACHOP,22
+  Form = 2
+#-------------------------------
+[PICNICKER,Faith,1]
+LoseText = "My cuties!"
+Pokemon = GENGAR,80
+  Form = 3
+#-------------------------------
+[PICNICKER,Sophie,1]
+LoseText = "To think these are not their normal typings!"
+Pokemon = XATU,79
+Pokemon = DUNSPARCE,79
+#-------------------------------
+[PICNICKER,Megan,1]
+LoseText = "Oh my!"
+Pokemon = CHIMECHO,78
+Pokemon = AZUMARILL,78
+Pokemon = CLEFABLE,78
+#-------------------------------
+[BLACKBELT,Tyler,1]
+LoseText = "Bruh!"
+Pokemon = MACHAMP,80
   Form = 2
 #-------------------------------
 # Cinder Foothills
@@ -247,6 +483,32 @@ Pokemon = MONFERNO,34
 LoseText = "Too hot!"
 Pokemon = TURTONATOR,37
 #-------------------------------
+[JUGGLER,Kirk,1]
+LoseText = "Owowow!"
+Pokemon = MAGMAR,78
+Pokemon = MAGMAR,78
+Pokemon = MAGMORTAR,79
+#-------------------------------
+[FISHERMAN,Griffin,1]
+LoseText = "Ah lost it!"
+Pokemon = HIPPOWDON,80
+  Form = 2
+#-------------------------------
+[FISHERMAN,Tucker,1]
+LoseText = "Ah lost it!"
+Pokemon = GYARADOS,78
+Pokemon = LANTURN,78
+Pokemon = WHISCASH,78
+#-------------------------------
+[JUGGLER,Douglas,1]
+LoseText = "Bad pun, I know."
+Pokemon = HOUNDOOM,79
+Pokemon = INFERNAPE,79
+#-------------------------------
+[JUGGLER,Franklin,1]
+LoseText = "Too hot!"
+Pokemon = TURTONATOR,80
+#-------------------------------
 # Mt Sear Base South
 #-------------------------------
 [POKEMONBREEDER,April]
@@ -275,6 +537,32 @@ Pokemon = PANSEAR,36
 Pokemon = PANPOUR,36
   Form = 1
 #-------------------------------
+[POKEMONBREEDER,April,1]
+LoseText = "Oh wow!"
+Pokemon = AZUMARILL,78
+Pokemon = JYNX,78
+Pokemon = CORVIKNIGHT,78
+#-------------------------------
+[FISHERMAN,Isaac,1]
+LoseText = "Well done!"
+Pokemon = LANTURN,80
+  Ability = 2
+#-------------------------------
+[HIKER,John,1]
+LoseText = "Shoot!"
+Pokemon = GIGALITH,78
+Pokemon = EXCADRILL,78
+Pokemon = BASTIODON,78
+#-------------------------------
+[POKEMONBREEDER,Jane,1]
+LoseText = "Oh no! My cute Pokémon!"
+Pokemon = SIMISAGE,78
+  Form = 1
+Pokemon = SIMISEAR,78
+  Form = 1
+Pokemon = SIMIPOUR,78
+  Form = 1
+#-------------------------------
 # Torrential Slopes
 #-------------------------------
 [WORKER,Kirk]
@@ -300,12 +588,7 @@ Pokemon = AZUMARILL,36
 Pokemon = JYNX,36
 Pokemon = CORVISQUIRE,36
 #-------------------------------
-[FISHERMAN,Isaac]
-LoseText = "Well done!"
-Pokemon = LANTURN,38
-  Ability = 2
-#-------------------------------
-[HIKER,John]
+[HIKER,Jon]
 LoseText = "Shoot!"
 Pokemon = BOLDORE,36
 Pokemon = EXCADRILL,36
@@ -316,6 +599,25 @@ LoseText = "Oh no! My cute Pokémon!"
 Pokemon = MAGBY,36
 Pokemon = ELEKID,36
 Pokemon = SMOOCHUM,36
+#-------------------------------
+#-------------------------------
+[POKEMONBREEDER,May,1]
+LoseText = "Oh wow!"
+Pokemon = AZUMARILL,78
+Pokemon = JYNX,78
+Pokemon = CORVIKNIGHT,78
+#-------------------------------
+[HIKER,Jon,1]
+LoseText = "Shoot!"
+Pokemon = GIGALITH,78
+Pokemon = EXCADRILL,78
+Pokemon = RAMPARDOS,78
+#-------------------------------
+[POKEMONBREEDER,Jen,1]
+LoseText = "Oh no! My cute Pokémon!"
+Pokemon = MAGMORTAR,78
+Pokemon = ELECTIVIRE,78
+Pokemon = JYNX,78
 #-------------------------------
 # Dust-Ridden Pass
 #-------------------------------
@@ -573,7 +875,7 @@ Pokemon = CHIMECHO,49
 # Distortion World
 #-------------------------------
 [CHAMPION1,Cynthia]
-LoseText = "Interesting."
+LoseText = "Oh wow!"
 Pokemon = HIPPOWDON,63
   Form = 2
   Moves = LIQUIDATION,STEALTHROCK,SLACKOFF,WHIRLWIND
@@ -736,9 +1038,338 @@ Pokemon = CHIMECHO,69
   Ability = 2
   Item = CHIMECHONITE
   Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
-  
 #-------------------------------
-  
+# Zharo
+#-------------------------------
+[TEAMMAELSTROM_M,Admin,2]
+LoseText = "Hmmph. We'll let the boss handle you."
+Pokemon = MUSHARNA,81
+Pokemon = CHATOT,81
+Pokemon = AZUMARILL,81
+Pokemon = AERODACTYL,81
+Pokemon = TORTERRA,82
+	Item = TORTERRANITE
+#-------------------------------
+[TEAMMAELSTROM_M,Admin,3]
+LoseText = "Hmmph. We'll let the boss handle you."
+Pokemon = MUSHARNA,81
+Pokemon = CHATOT,81
+Pokemon = CLEFABLE,81
+Pokemon = BASTIODON,81
+Pokemon = EMPOLEON,82
+	Item = EMPOLEONITE
+#-------------------------------
+[TEAMMAELSTROM_M,Admin,4]
+LoseText = "Hmmph. We'll let the boss handle you."
+Pokemon = MEDICHAM,81
+Pokemon = CLEFABLE,81
+Pokemon = NOIVERN,81
+Pokemon = AURORUS,81
+Pokemon = SABLEYE,82
+	Item = SABLENITE
+#-------------------------------
+[TEAMMAELSTROM_M,Admin,5]
+LoseText = "Hmmph. We'll let the boss handle you."
+Pokemon = ELECTRODE,82
+Pokemon = DUNSPARCE,82
+Pokemon = RAMPARDOS,82
+Pokemon = BEHEEYEM,82
+Pokemon = MEDICHAM,83
+	Item = MEDICHAMITE
+#-------------------------------
+# Thera Comet
+#-------------------------------
+[PROFESSOR,Palm]
+LoseText = "You have definitely learned well."
+Pokemon = ARIADOS,83
+  Form = 1
+  Ability = 1
+  Moves = STICKYWEB,UTURN,SHADOWSNEAK,LEECHLIFE
+Pokemon = DRAGAPULT,81
+  Form = 1
+  Ability = 1
+  Moves = BOOMBURST,SPECTRALSHRIEK,DEATHTOLL,UTURN
+Pokemon = VICTREEBEL,82
+  Form = 1
+  Moves = KNOCKOFF,LEAFBLADE,SPIKECANNON,SWORDSDANCE
+Pokemon = PINSIR,83
+  Form = 2
+  Moves = CLOSECOMBAT,STONEEDGE,EARTHQUAKE,SWORDSDANCE
+Pokemon = SALAMENCE,85
+  Form = 2
+  Item = USALAMENCITE
+  Moves = EARTHQUAKE,DRAGONCLAW,DRAGONDANCE,IRONHEAD
+#-------------------------------
+[PROFESSOR,Myrtle]
+LoseText = "But of course."
+Pokemon = FROSLASS,83
+  Moves = HYPERVOICE,CHILLINGCRY,SPECTRALSHRIEK,WILLOWISP
+Pokemon = ELECTRODE,81
+  Moves = BOOMBURST,OVERCHARGE,VOLTSWITCH,MAGNETRISE
+Pokemon = CLEFABLE,82
+  Moves = MOONBLAST,STARBEAM,WISH,AROMATHERAPY
+Pokemon = ABSOL,83
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = METAGROSS,85
+  Item = METAGROSSITE
+  Moves = EARTHQUAKE,IRONHEAD,METEORMASH,BULLETPUNCH
+#-------------------------------
+[PROFESSOR,Metto]
+LoseText = "I really should have seen this coming."
+Pokemon = HIPPOWDON,83
+  Form = 2
+  Moves = LIQUIDATION,SLACKOFF,WHIRLWIND,STEALTHROCK
+Pokemon = CHERRIM,81
+  Moves = GIGADRAIN,STARBEAM,WEATHERBALL,LEECHSEED
+Pokemon = XATU,82
+  Moves = STARBEAM,DRAGONPULSE,ROOST,AIRSLASH
+Pokemon = HYPNO,83
+  Ability = 2
+  Moves = NASTYPLOT,PSYSHOCK,QUANTUMWAVE,SHADOWBALL
+Pokemon = CORVIKNIGHT,85
+  Item = CORVITE
+  Moves = IRONHEAD,BRAVEBIRD,ROOST,UTURN
+#-------------------------------
+[MAELSTROMBOSS,Aaron,12]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,85
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,83
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,84
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,85
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = DIALGA,86
+  Item = ADAMANTORB
+  Moves = QUANTUMWAVE,POLARITYPULSE,ICEBEAM,EARTHPOWER
+Pokemon = CHIMECHO,87
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,13]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,86
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,84
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,85
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,86
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = DIALGA,87
+  Item = ADAMANTORB
+  Moves = QUANTUMWAVE,POLARITYPULSE,ICEBEAM,EARTHPOWER
+Pokemon = CHIMECHO,88
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,14]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,87
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,85
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,86
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,87
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = DIALGA,88
+  Item = ADAMANTORB
+  Moves = QUANTUMWAVE,POLARITYPULSE,ICEBEAM,EARTHPOWER
+Pokemon = CHIMECHO,89
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,15]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,88
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,86
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,87
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,88
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = DIALGA,89
+  Item = ADAMANTORB
+  Moves = QUANTUMWAVE,POLARITYPULSE,ICEBEAM,EARTHPOWER
+Pokemon = CHIMECHO,90
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,16]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,89
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,87
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,88
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,89
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = DIALGA,90
+  Item = ADAMANTORB
+  Moves = QUANTUMWAVE,POLARITYPULSE,ICEBEAM,EARTHPOWER
+Pokemon = CHIMECHO,91
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,17]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,90
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,88
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,89
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,90
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = DIALGA,91
+  Item = ADAMANTORB
+  Moves = QUANTUMWAVE,POLARITYPULSE,ICEBEAM,EARTHPOWER
+Pokemon = CHIMECHO,92
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,18]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,85
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,83
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,84
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,85
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = PALKIA,86
+  Item = LUSTROUSORB
+  Moves = STARBEAM,SURF,FLAMETHROWER,EARTHPOWER
+Pokemon = CHIMECHO,87
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,19]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,86
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,84
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,85
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,86
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = PALKIA,87
+  Item = LUSTROUSORB
+  Moves = STARBEAM,SURF,FLAMETHROWER,EARTHPOWER
+Pokemon = CHIMECHO,88
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,20]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,87
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,85
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,86
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,87
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = PALKIA,88
+  Item = LUSTROUSORB
+  Moves = STARBEAM,SURF,FLAMETHROWER,EARTHPOWER
+Pokemon = CHIMECHO,89
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,21]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,88
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,86
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,87
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,88
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = PALKIA,89
+  Item = LUSTROUSORB
+  Moves = STARBEAM,SURF,FLAMETHROWER,EARTHPOWER
+Pokemon = CHIMECHO,90
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,22]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,89
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,87
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,88
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,89
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = PALKIA,90
+  Item = LUSTROUSORB
+  Moves = STARBEAM,SURF,FLAMETHROWER,EARTHPOWER
+Pokemon = CHIMECHO,91
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
+[MAELSTROMBOSS,Aaron,23]
+LoseText = "What?!? IMPOSSIBLE!"
+Pokemon = SWAMPERT,90
+  Form = 2
+  Ability = 2
+  Moves = STEALTHROCK,KNOCKOFF,ROCKSLIDE,EARTHQUAKE
+Pokemon = MEDICHAM,88
+  Moves = FAKEOUT,STARSAP,DRAINPUNCH,METEORMASH
+Pokemon = ABSOL,89
+  Moves = KNOCKOFF,PSYCHOCUT,QUANTUMCRUSH,SUCKERPUNCH
+Pokemon = FORMETEOS,90
+  Moves = STARBEAM,BAROMETERBOMB,ICEBEAM,SCALD
+Pokemon = PALKIA,91
+  Item = LUSTROUSORB
+  Moves = STARBEAM,SURF,FLAMETHROWER,EARTHPOWER
+Pokemon = CHIMECHO,92
+  Ability = 2
+  Item = CHIMECHONITE
+  Moves = BOOMBURST,STARBEAM,DEATHTOLL,POLARITYPULSE
+#-------------------------------
 #-------------------------------
 #Level Trainer
 #-------------------------------
