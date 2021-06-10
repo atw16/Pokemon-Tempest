@@ -593,6 +593,14 @@ class PokeBattle_Battle
       @peer.pbOnLeavingBattle(self,pkmn,@usedInBattle[0][i],true)   # Reset form
       pkmn.item = @initialItems[0][i]
     end
+    @scene.pbTrainerBattleSpeech("loss") if @decision == 2
+    # reset all the EBDX queues
+    EliteBattle.reset(:nextBattleScript, :wildSpecies, :wildLevel, :wildForm, :nextBattleBack, :nextUI, :nextBattleData,
+                     :wildSpecies, :wildLevel, :wildForm, :setBoss, :cachedBattler, :tviewport)
+    EliteBattle.set(:setBoss, false)
+    EliteBattle.set(:colorAlpha, 0)
+    EliteBattle.set(:smAnim, false)
+    # return final output
     return @decision
   end
 
